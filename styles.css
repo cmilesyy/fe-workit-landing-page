@@ -1,0 +1,15 @@
+:root {
+    /* Font Color */
+    --font-white: #FFFFFF;
+    --font-purple: hsl(273, 85%, 13%);
+    /* Background Color */
+    --bg-dark-purple: hsl(273, 85%, 13%);
+    --bg-light-pink: hsl(276, 100%, 99%);
+    --bg-white: hsl(0, 0%, 100%);
+    /* Typography */
+    --h1-size: 80px;
+    --h2-size: 56px;
+    --h3-size: 32px;
+    --p-size: 18px;
+
+}
