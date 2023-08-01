@@ -1,15 +1,107 @@
 :root {
-    /* Font Color */
-    --font-white: #FFFFFF;
-    --font-purple: hsl(273, 85%, 13%);
-    /* Background Color */
-    --bg-dark-purple: hsl(273, 85%, 13%);
-    --bg-light-pink: hsl(276, 100%, 99%);
-    --bg-white: hsl(0, 0%, 100%);
-    /* Typography */
-    --h1-size: 80px;
-    --h2-size: 56px;
-    --h3-size: 32px;
-    --p-size: 18px;
-
+  /* Font Color */
+  --font-white: #ffffff;
+  --font-purple: hsl(273, 85%, 13%);
+  /* Background Color */
+  --bg-dark-purple: hsl(273, 85%, 13%);
+  --bg-light-pink: hsl(276, 100%, 99%);
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-green: hsl(150, 100%, 63%);
+  /* Typography */
+  --h1-size: 80px;
+  --h2-size: 56px;
+  --h3-size: 32px;
+  --p-size: 18px;
 }
+
+/* Utility Classes */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: var(--h1-size);
+  font-weight: 600;
+  line-height: 80px;
+  color: white;
+}
+
+h2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: var(--h2-size);
+  font-weight: 600;
+  line-height: 64px;
+  color: var(--font-purple);
+}
+
+p {
+  font-family: "Manrope", sans-serif;
+  font-size: var(--p-size);
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--font-purple);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 > span {
+    border-bottom: 1px solid var(--bg-green);
+}
+
+.button {
+    width: 161px;
+    height: 61px;
+    background-color: var(--bg-green);
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    background-color: var(--bg-dark-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    width: 635px;
+    padding-bottom: 37px;
+}
+
+.hero-section .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 165px;
+}
+
+.hero-section .top a {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--bg-green);
+}
+
+
+
+
