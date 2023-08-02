@@ -93,6 +93,7 @@ h1 > span {
     justify-content: space-between;
     align-items: center;
     padding: 56px 165px;
+    width: 100%;
 }
 
 .hero-section .top a {
@@ -102,6 +103,78 @@ h1 > span {
     border-bottom: 2px solid var(--bg-green);
 }
 
+.hero-section > button {
+    margin-bottom: 326px;
+}
+
+/* Image */
 
 
+
+
+/* Information Section */
+
+.information {
+    background-color: var(--bg-light-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 162px 0 162px;
+    gap: 26px;
+}
+
+.information span {
+    font-size: 24px;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.information h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-bottom: 28px;
+}
+
+.insights, .decisions, .affordable p {
+    width: 346px;
+}
+
+/* CTA Section */
+
+.call-to-action {
+    display: flex;
+    color: white;
+    padding: 50px;
+    min-width: 100%;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-dark-purple);
+    /* width: 730px; */
+
+}
+
+.cta-section p {
+    font-size: 18px;
+    color: white;
+}
+
+.cta-section h2 {
+    color: white;
+}
 
