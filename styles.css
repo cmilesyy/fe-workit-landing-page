@@ -23,10 +23,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: start;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -81,6 +77,9 @@ h1 > span {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* position: absolute; */
+    border-bottom-left-radius: 100% 20%;
+    border-bottom-right-radius: 100% 20%;
 }
 
 .hero-section h1 {
@@ -109,7 +108,20 @@ h1 > span {
 
 /* Image */
 
+.phone-container {
+    background-color: var(--bg-light-pink);
+    border-top-left-radius: -100% -100%; 
+    border-top-right-radius: ;
+}
 
+.phone {
+    display: flex;
+    position: relative;
+    width: 715px;
+    height: 427px;
+    top: -250px;
+    right: -400px;
+}
 
 
 /* Information Section */
@@ -120,8 +132,11 @@ h1 > span {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 162px 0 162px;
+    padding: 0 162px 171px 162px;
     gap: 26px;
+    border-bottom-left-radius: 100% 20%;
+    border-bottom-right-radius: 100% 20%;
+
 }
 
 .information span {
@@ -136,7 +151,8 @@ h1 > span {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 56px;
 }
 
 .information h3 {
@@ -155,26 +171,42 @@ h1 > span {
 .call-to-action {
     display: flex;
     color: white;
-    padding: 50px;
-    min-width: 100%;
+    padding-left: 250px;
+    position: absolute;
+    padding-top: 250px;
+}
+
+.image-cta img {
+    width: 477px;
+    height: 477px;
+    position: relative;
+    left: 75px;
+    bottom: 180px;
+    z-index: -1;
 }
 
 .cta-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     background-color: var(--bg-dark-purple);
-    /* width: 730px; */
-
+    width: 730px;
+    height: 413px;
+    flex-shrink: 0;
+    gap: 32px;
+    padding-left: 64px;
+    
 }
 
 .cta-section p {
     font-size: 18px;
     color: white;
+    width: 602px;
 }
 
 .cta-section h2 {
     color: white;
+    padding-top: 64px;
 }
 
